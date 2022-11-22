@@ -1,0 +1,19 @@
+{
+  "name": "example-lib-react",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "source": "./src/index.jsx",
+  "module": "./dist/example-lib-react.js",
+  "scripts": {
+    "build": "microbundle -f es --jsx React.createElement"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

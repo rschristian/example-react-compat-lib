@@ -1,0 +1,16 @@
+{
+  "name": "example-lib",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "react": "yarn workspace example-lib-react",
+    "compat": "yarn workspace example-lib-compat",
+    "build": "yarn react build && yarn compat build"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

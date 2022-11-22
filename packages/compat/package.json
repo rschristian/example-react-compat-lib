@@ -1,0 +1,14 @@
+{
+  "name": "example-lib-compat",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "source": "../react/src/index.jsx",
+  "module": "./dist/example-lib-compat.js",
+  "scripts": {
+    "build": "microbundle -f es --alias react=preact/compat"
+  },
+  "devDependencies": {
+    "preact": "^10.11.3"
+  }
+}
