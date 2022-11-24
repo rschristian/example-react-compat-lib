@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
-  "source": "../react/src/index.jsx",
-  "module": "./dist/example-lib-compat.js",
+  "source": "./src/index.js",
+  "exports": "./dist/example-lib-compat.js",
   "scripts": {
-    "build": "microbundle -f es --alias react=preact/compat"
+    "build": "microbundle -f modern --alias react=preact/compat"
   },
   "devDependencies": {
-    "preact": "^10.11.3"
+    "preact": "^10.11.3",
+    "preact-custom-element": "^4.2.1"
   }
 }

@@ -4,9 +4,9 @@
   "license": "MIT",
   "type": "module",
   "source": "./src/index.jsx",
-  "module": "./dist/example-lib-react.js",
+  "exports": "./dist/example-lib-react.js",
   "scripts": {
-    "build": "microbundle -f es --jsx React.createElement"
+    "build": "microbundle -f modern --jsx React.createElement"
   },
   "peerDependencies": {
     "react": "^18.2.0",
